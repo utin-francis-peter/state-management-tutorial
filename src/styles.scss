@@ -1,0 +1,53 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.counter-app {
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(240, 165, 25);
+
+  .counter-app_inner {
+    border: 1px solid gray;
+    padding: 0.7rem;
+
+    //   max-height: 40vh;
+    .display {
+      background: #adadad;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .controls {
+      display: flex;
+      gap: 0.2rem;
+      margin-top: 1rem;
+      button {
+        flex: 1;
+        padding: 1rem 1.3rem;
+        background: rgb(141, 95, 8);
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all ease-in 0.2s;
+
+        &:hover {
+          background: rgb(190, 140, 46);
+        }
+
+        @media screen and (min-width: 800px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .display,
+    .controls {
+      border-radius: 6px;
+    }
+  }
+}
