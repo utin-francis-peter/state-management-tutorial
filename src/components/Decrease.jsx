@@ -1,5 +1,7 @@
-const Decrease = () => {
-  return <button>Decrease</button>;
+const Decrease = ({ dispatch }) => {
+  return (
+    <button onClick={() => dispatch({ type: "decrease" })}>Decrease</button>
+  );
 };
 
 export default Decrease;
