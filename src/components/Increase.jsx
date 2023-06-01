@@ -1,5 +1,10 @@
+import { useCounterContext } from "../context/counter.context";
+
 const Increase = () => {
-  return <button>Increase</button>;
+  const { dispatch } = useCounterContext();
+  return (
+    <button onClick={() => dispatch({ type: "increase" })}>Increase</button>
+  );
 };
 
 export default Increase;

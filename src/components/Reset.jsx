@@ -1,5 +1,8 @@
+import { useCounterContext } from "../context/counter.context";
+
 const Reset = () => {
-  return <button>Reset</button>;
+  const { dispatch } = useCounterContext();
+  return <button onClick={() => dispatch({ type: "reset" })}>Reset</button>;
 };
 
 export default Reset;
