@@ -1,5 +1,5 @@
-const Decrease = () => {
-  return <button>Decrease</button>;
+const Decrease = ({ handleDecrease }) => {
+  return <button onClick={handleDecrease}>Decrease</button>;
 };
 
 export default Decrease;
