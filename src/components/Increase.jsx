@@ -1,5 +1,10 @@
+import { useDispatch } from "react-redux";
+import { increase } from "../redux/counter.slice";
+
 const Increase = () => {
-  return <button>Increase</button>;
+  // subscribe dispatch to component
+  const dispatch = useDispatch();
+  return <button onClick={() => dispatch(increase())}>Increase</button>;
 };
 
 export default Increase;

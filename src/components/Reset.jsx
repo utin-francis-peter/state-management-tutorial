@@ -1,5 +1,9 @@
+import { useDispatch } from "react-redux";
+import { reset } from "../redux/counter.slice";
+
 const Reset = () => {
-  return <button>Reset</button>;
+  const dispatch = useDispatch();
+  return <button onClick={() => dispatch(reset())}>Reset</button>;
 };
 
 export default Reset;
